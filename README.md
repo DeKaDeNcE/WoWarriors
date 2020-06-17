@@ -1,4 +1,4 @@
-# ![logo](https://community.trinitycore.org/public/style_images/1_trinitycore.png) TrinityCore (3.3.5)
+# World of Warriors (3.3.5)
 
 [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/TrinityCore/TrinityCore.svg)](https://isitmaintained.com/project/TrinityCore/TrinityCore "Average time to resolve an issue") [![Percentage of issues still open](https://isitmaintained.com/badge/open/TrinityCore/TrinityCore.svg)](https://isitmaintained.com/project/TrinityCore/TrinityCore "Percentage of issues still open")
 
@@ -12,6 +12,8 @@ master | 3.3.5
 
 ## Introduction
 
+This framework is fully based on TrinityCore, more info below this line:
+
 TrinityCore is a *MMORPG* Framework based mostly in C++.
 
 It is derived from *MaNGOS*, the *Massive Network Game Object Server*, and is
@@ -22,10 +24,10 @@ mechanics and functionality.
 It is completely open source; community involvement is highly encouraged.
 
 If you wish to contribute ideas or code please visit our site linked below or
-make pull requests to our [Github repository](https://github.com/TrinityCore/TrinityCore/pulls).
+make pull requests to our [Github repository](https://github.com/DuelistRag3/WoWarriors/pulls).
 
-For further information on the TrinityCore project, please visit our project
-website at [TrinityCore.org](https://www.trinitycore.org).
+For further information on the World of warriors project, please visit our project
+website at [world-of-warriors.de](https://www.world-of-warriors.de).
 
 ## Requirements
 
@@ -42,7 +44,7 @@ Windows, Linux and OS X.
 
 ## Reporting issues
 
-Issues can be reported via the [Github issue tracker](https://github.com/TrinityCore/TrinityCore/labels/Branch-3.3.5a).
+Issues can be reported via the [Github issue tracker](https://github.com/DuelistRag3/WoWarriors/issues/new).
 
 Please take the time to review existing issues before submitting your own to
 prevent duplicates.
@@ -74,5 +76,6 @@ Read file [AUTHORS](AUTHORS).
 ## Links
 
 * [Website](https://www.trinitycore.org)
+* [WebsiteWorldOfWarriors](https://www.world-of-warriors.de)
 * [Wiki](https://www.trinitycore.info)
 * [Forums](https://community.trinitycore.org)
