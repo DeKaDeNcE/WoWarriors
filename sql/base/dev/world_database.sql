@@ -4179,6 +4179,27 @@ CREATE TABLE `waypoints` (
   `point_comment` text DEFAULT NULL,
   PRIMARY KEY (`entry`,`pointid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature waypoints';
+
+DROP TABLE IF EXISTS `updates`
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `updates` (  
+  `name` VARCHAR(200) NOT NULL COMMENT 'filename with extension of the update.',
+  `hash` CHAR(40) COMMENT 'sha1 hash of the sql file',
+  `state` ENUM('RELEASED','ARCHIVED') NOT NULL COMMENT 'defines if an update is released or archived.',
+  `timestamp` TIMESTAMP NOT NULL COMMENT 'timestamp when the query was applied.',
+  `speed` INT(10) UNSIGNED NOT NULL COMMENT 'time the query takes to apply in ms.'
+);
+/*!40101 SET character_set_client = @saved_cs_client */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+DROP TABLE IF EXISTS `updates_include`
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `updates_include` (  
+  `path` VARCHAR(200) NOT NULL COMMENT 'directory to include. $ means relative to the source directory.',
+  `state` ENUM('RELEASED','ARCHIVED') NOT NULL COMMENT 'defines if the directory contains released or archived updates.'
+);
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
